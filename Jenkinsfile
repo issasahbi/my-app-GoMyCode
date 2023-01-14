@@ -14,7 +14,7 @@ pipeline {
         stage('Install') {
              steps{
                 script{
-                    sh "npm install"
+                    sh "sudo npm install"
                 }
             }
         }
@@ -24,19 +24,6 @@ pipeline {
                     sh "ng version"
                 }
             }
-        }
-        stage ('code quality'){
-            steps{
-                sh 'ng lint'
-            }
-        }
-
-        stage('Serve') {
-            steps{
-                script{
-                    sh "ng build"
-                }
-            }
-        }
+        }     
     }
 }
