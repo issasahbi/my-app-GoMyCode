@@ -5,7 +5,7 @@
       name: "angular-ci"
       tag: "v1"
       build:
-      path: /var/lib/jenkins/workspace/angular
+      path: /var/lib/jenkins/workspace/CI-AngularProject
       pull: no
       source: build
       state: present
