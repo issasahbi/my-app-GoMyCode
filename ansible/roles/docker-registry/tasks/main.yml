@@ -1,0 +1,10 @@
+---
+# tasks file for docker-registry
+  - name: push image to docker hub
+    docker_image:
+      name: "devops"
+      repository: "issasahbi/devops"
+  - name: push image to docker hub
+    docker_image:
+      name: "issasahbi/devops"
+      push: yes
