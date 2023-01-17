@@ -12,7 +12,7 @@
   - name: run container docker
     docker_container:
       name: "devops_container"
-      image: "Angular:latest"
+      image: "devops:latest"
       state: started
       recreate: true
       ports:
