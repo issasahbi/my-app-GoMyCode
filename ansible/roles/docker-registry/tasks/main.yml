@@ -1,10 +1,13 @@
 ---
 # tasks file for docker-registry
-   - name: push image to docker hub
-      docker_image:
-      name: "devops"
-      repository: "issasahbi/devops"
-   - name: push image to docker hub
-    docker_image:
-      name: "issasahbi/devops"
-      push: yes
+- name: Log into DockerHub
+  docker_login:
+    username: issasahbi
+    password: 123321...
+
+- name: Tag and push to docker hub
+  docker_image:
+    name: angular:latest
+    repository: https://hub.docker.com/repository/docker/issasahbi/devops/general
+    tag: end
+    push: yes
