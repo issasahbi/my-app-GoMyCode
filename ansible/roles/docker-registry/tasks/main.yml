@@ -8,6 +8,6 @@
 - name: Tag and push to docker hub
   docker_image:
     name: angular:latest
-    repository: https://hub.docker.com/repository/docker/issasahbi/devops/general
+    repository: issasahbi/devops
     tag: end
     push: yes
