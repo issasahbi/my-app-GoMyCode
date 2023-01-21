@@ -9,5 +9,6 @@
   docker_image:
     name: angular:latest
     repository: issasahbi/devops
+    source: /var/lib/jenkins/workspace/CI-AngularProject
     tag: end
     push: yes
